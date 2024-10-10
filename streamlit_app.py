@@ -50,7 +50,7 @@ def convert_file_to_text(input_file):
     else:
         raise ValueError("Unsupported file format: {}".format(file_extension))
 
-@st.cache_data
+
 def generate_questions(file, question_type): 
     if question_type == "multiple choice":
         examples = [
